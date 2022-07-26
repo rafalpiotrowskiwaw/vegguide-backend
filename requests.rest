@@ -1,0 +1,7 @@
+POST http://localhost:8080/review
+Content-Type: application/json
+
+{
+    "userId": "asa",
+    "content": "Ipsum"
+}

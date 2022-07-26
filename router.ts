@@ -9,6 +9,7 @@ router.use((req: Request, res: Response, next: NextFunction) => {
   console.log('Time: ', Date.now())
   next()
 })
+
 // define the home page route
 router.get('/', async (req: Request, res: Response, next: NextFunction) => {
   //  const review = new Review({ userId: 'asas', content: 'sdsff' });
@@ -19,7 +20,7 @@ router.get('/', async (req: Request, res: Response, next: NextFunction) => {
 })
 
 // define the about route
-router.get('/review', (req: Request, res: Response, next: NextFunction) => {
+router.get('/reviews', (req: Request, res: Response, next: NextFunction) => {
   res.send('Reviews');
 })
 

@@ -9,7 +9,7 @@
             $("#submit").click(function () {
                 user = $("#userId").val();
                 content = $("#content").val();
-                $.post("http://localhost:8080/review", { userId: userId, content: content }, function (data) {
+                $.post("http://localhost:8080/review", { "userId": userId, "content": content }, function (data) {
                     if (data === 'yes') {
                         alert("login success");
                     }
